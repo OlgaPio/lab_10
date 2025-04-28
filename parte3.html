@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 3: Operadores Lógicos y Concatenación de Strings</title>
+</head>
+<body>
+    <h1>Parte 3: Uso de Operadores Lógicos y Concatenación de Strings</h1>
+    <p>Abre la consola del navegador para observar los resultados del código JavaScript.</p>
+
+    <script>
+        // Declaración de variables booleanas
+        let esMayorDeEdad = true;
+        let tieneLicencia = false;
+
+        // Determinar si una persona puede conducir
+        if (esMayorDeEdad && tieneLicencia) {
+            console.log("La persona puede conducir.");
+        } else if (esMayorDeEdad && !tieneLicencia) {
+            console.log("La persona es mayor de edad, pero no tiene licencia para conducir.");
+        } else if (!esMayorDeEdad && tieneLicencia) {
+            console.log("La persona tiene licencia, pero no es mayor de edad.");
+        } else {
+            console.log("La persona no puede conducir.");
+        }
+
+        // Concatenación de strings (método tradicional)
+        let nombre = "Juan";
+        let mensaje1 = "¡Bienvenido, " + nombre + "! Espero que disfrutes del laboratorio.";
+        console.log("Concatenación tradicional:", mensaje1);
+
+        // Template literals (ES6+)
+        let mensaje2 = `¡Bienvenido, ${nombre}! Espero que disfrutes del laboratorio.`;
+        console.log("Template literals:", mensaje2);
+    </script>
+</body>
+</html>
